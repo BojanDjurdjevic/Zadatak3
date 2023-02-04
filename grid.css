@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 16px;
+    row-gap: 60px;
+    justify-items: center;
+    }
+    .slika {
+        height: 150px;
+        width: 150px;
+        background: blue;
+        /*border: solid lightgrey;*/
+        border-radius: 10%;
+        background-size: cover;
+        align-self: center;
+        overflow: hidden;
+        box-shadow: 4px 4px 8px rgb(206, 205, 205);
+    }
+    .pozadina {
+        width: 100%;
+        height: 80%;
+        background-image: url(./placeholder-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .tekst {
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: lightgray;
+        height: 22%;
+    }
+    .par, h1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 1024px) {
+    #container {
+    grid-template-columns: repeat(4, 1fr);
+    }
+    } 
+    
+    @media screen and (max-width: 768px) {
+    #container {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    }
+    
+    @media screen and (max-width: 414px) {
+    #container {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    }
+    
+    
